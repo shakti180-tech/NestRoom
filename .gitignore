@@ -1,0 +1,4 @@
+node_modules/
+.env
+backend/data/secret.key
+backend/data/db.json

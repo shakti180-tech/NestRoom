@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NestRoom – Find your perfect room, PG or flat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2563eb">
+<meta name="description" content="Find rooms, PGs and flats and connect directly with property owners.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/modern.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html"><span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span>NestRoom</a>
+    <nav class="menu" aria-label="Main">
+      <a href="#home">Home</a><a href="#properties">Properties</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions" id="navActions"></div>
+  </div>
+</header>
+
+<main>
+<section class="hero2" id="home">
+  <h1>Find Your Perfect Room, PG or Flat</h1>
+  <p>Connect directly with property owners. No brokers, no hidden fees.</p>
+  <form class="searchbar" id="searchForm" role="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input type="search" id="search" placeholder="Search by city, area or name (e.g., Mumbai, Bangalore)" aria-label="Search accommodations">
+    <button type="submit" class="go">Search</button>
+  </form>
+</section>
+
+<section class="sec" id="properties">
+  <div class="sec-in">
+    <div class="sec-head">
+      <h2>Available Accommodations</h2>
+      <select id="typeFilter" aria-label="Room type"><option value="all">All types</option></select>
+    </div>
+    <div class="chips" id="chips" aria-label="Filter by city"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="pgrid" id="grid"><p class="muted">Loading rooms…</p></div>
+  </div>
+</section>
+
+<section class="sec alt" id="about">
+  <div class="sec-in">
+    <h2 class="center">Why NestRoom?</h2>
+    <div class="features">
+      <div class="feature"><span class="ficon">🤝</span><h3>Direct with owners</h3><p>Talk to the property owner yourself. No brokers and no hidden fees.</p></div>
+      <div class="feature"><span class="ficon">✅</span><h3>Approved owners</h3><p>Every owner is reviewed and approved by our admin before listing rooms.</p></div>
+      <div class="feature"><span class="ficon">📸</span><h3>Real photos</h3><p>Owners upload photos of the actual room so you know what to expect.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="sec-in contact">
+    <h2 class="center">Get in touch</h2>
+    <p class="center muted">Questions about a listing or want to list your property? Write to us at <a href="mailto:support@nestroom.example">support@nestroom.example</a>.</p>
+    <div class="cta-row"><a class="btn" href="register-user.html">Find a room</a><a class="btn ghost" href="register-owner.html">List your property</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">© NestRoom · Rooms &amp; PGs made simple</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal-x" id="mClose" aria-label="Close">×</button>
+    <div class="modal-body" id="mBody"></div>
+  </div>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

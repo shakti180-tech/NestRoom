@@ -1,0 +1,50 @@
+/* Auth pages + dashboard header additions (uses the theme tokens from styles.css) */
+.auth-wrap{min-height:100vh;display:grid;place-items:center;padding:16px}
+.auth-card{width:100%;max-width:440px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.brand{font-size:26px;font-weight:800;letter-spacing:-.02em;margin:0}
+.auth-card .sub{margin:2px 0 18px}
+.field{display:grid;gap:4px;margin-bottom:12px}
+.field label{font-size:13px;font-weight:600;color:var(--mute)}
+.field input{width:100%}
+.field small{color:var(--mute);font-size:12px}
+.pw{position:relative}
+.pw input{padding-right:64px}
+.pw button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--acc);font:600 13px inherit;font-family:inherit;cursor:pointer;padding:6px 8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.auth-card .btn.full{width:100%;padding:11px 14px;font-size:15px;margin-top:4px}
+.err{min-height:20px;color:var(--bad);background:none;font-size:14px;margin:0 0 8px}
+.err:not(:empty){background:var(--badb);padding:8px 12px;border-radius:8px}
+.links{margin-top:16px;font-size:14px;color:var(--mute);display:grid;gap:4px;text-align:center}
+.links a{color:var(--acc);font-weight:600}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px;margin-bottom:16px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{text-align:center;padding:8px 0;border-radius:999px;font-weight:600;font-size:14px;color:var(--mute);cursor:pointer}
+.seg input:checked+label{background:var(--acc);color:var(--acc-t)}
+.seg input:focus-visible+label{outline:2px solid var(--acc);outline-offset:2px}
+/* dashboard header */
+.userbox{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:14px}
+.chip em{font-style:normal;color:var(--acc);text-transform:capitalize;margin-left:6px}
+[hidden]{display:none!important}
+/* booking / approval status tags */
+.b-pending{background:var(--warnb);color:var(--warn);border-color:transparent}
+.b-approved{background:var(--okb);color:var(--ok);border-color:transparent}
+.b-rejected{background:var(--badb);color:var(--bad);border-color:transparent}
+.b-cancelled,.b-ended{background:var(--bg);color:var(--mute)}
+.row .meta b{color:var(--ink);font-weight:600}
+.notice{background:var(--okb);color:var(--ok);border-radius:10px;padding:14px;margin:4px 0 12px;font-size:14px}
+.note{color:var(--mute);font-size:13px;margin:12px 0 0;text-align:center}
+.stat.alert{border-color:var(--warn);background:var(--warnb)}
+.stat.alert span{color:var(--warn)}
+.sec-note{color:var(--mute);font-size:13px;margin:-4px 0 10px}
+/* leave requests, contact links, admin owner details */
+.b-leaving{background:var(--warnb);color:var(--warn);border-color:transparent}
+.row a{color:var(--acc);font-weight:600;text-decoration:none}
+.row a:hover{text-decoration:underline}
+.detail{grid-column:1/-1;margin-top:4px;border-top:1px solid var(--line);padding-top:8px}
+.detail summary{cursor:pointer;color:var(--acc);font-weight:600;font-size:14px}
+.mini{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:13px;color:var(--mute);padding:6px 0;border-bottom:1px dashed var(--line)}
+.mini:last-child{border-bottom:0}
+.mini b{color:var(--ink);font-weight:600}
+.detail h4{margin:10px 0 2px;font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.04em}
+.act .btn{white-space:nowrap}

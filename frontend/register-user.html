@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Create user account – NestRoom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/modern.css">
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1 class="brand"><span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span>NestRoom</h1>
+    <p class="sub">Create a user account to find and book rooms</p>
+    <form id="f" data-kind="user" novalidate>
+      <div class="field"><label for="name">Full name</label>
+        <input id="name" name="name" autocomplete="name" required></div>
+      <div class="two">
+        <div class="field"><label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="field"><label for="username">Username</label>
+        <input id="username" name="username" autocomplete="username" required>
+        <small>3–30 letters, numbers, - or _</small></div>
+      <div class="field"><label for="password">Password</label>
+        <div class="pw"><input id="password" name="password" type="password" autocomplete="new-password" required>
+        <button type="button" data-toggle="password">Show</button></div>
+        <small>At least 8 characters, with a letter and a number</small></div>
+      <div class="field"><label for="confirm">Confirm password</label>
+        <input id="confirm" name="confirm" type="password" autocomplete="new-password" required></div>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn full" type="submit">Create account</button>
+    </form>
+    <div class="links">
+      <span>Already registered? <a href="login.html">Log in</a></span>
+      <span>Own a PG or room? <a href="register-owner.html">Register as an owner</a></span>
+    </div>
+  </div>
+</div>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

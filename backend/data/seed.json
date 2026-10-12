@@ -1,0 +1,199 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Sunrise PG – 101",
+      "addr": "12 MG Road, Indiranagar, Bengaluru",
+      "type": "Single room",
+      "rent": 9500,
+      "status": "available",
+      "owner": "Meera Shah",
+      "ownerId": 1001,
+      "city": "Bangalore",
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Food"
+      ],
+      "description": "",
+      "images": []
+    },
+    {
+      "id": 2,
+      "name": "Sunrise PG – 102",
+      "addr": "12 MG Road, Indiranagar, Bengaluru",
+      "type": "Double sharing",
+      "rent": 6500,
+      "status": "booked",
+      "owner": "Meera Shah",
+      "ownerId": 1001,
+      "city": "Bangalore",
+      "amenities": [
+        "WiFi",
+        "Food"
+      ],
+      "description": "",
+      "images": []
+    },
+    {
+      "id": 3,
+      "name": "Sunrise PG – 103",
+      "addr": "12 MG Road, Indiranagar, Bengaluru",
+      "type": "Triple sharing",
+      "rent": 4800,
+      "status": "available",
+      "owner": "Meera Shah",
+      "ownerId": 1001,
+      "city": "Bangalore",
+      "amenities": [
+        "WiFi",
+        "Laundry"
+      ],
+      "description": "",
+      "images": []
+    },
+    {
+      "id": 4,
+      "name": "Green Nest – A2",
+      "addr": "48 Park Street, Kolkata",
+      "type": "Studio flat",
+      "rent": 12000,
+      "status": "available",
+      "owner": "Arjun Rao",
+      "ownerId": 1002,
+      "city": "Kolkata",
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking"
+      ],
+      "description": "",
+      "images": []
+    },
+    {
+      "id": 5,
+      "name": "Green Nest – B1",
+      "addr": "48 Park Street, Kolkata",
+      "type": "1 BHK",
+      "rent": 15500,
+      "status": "booked",
+      "owner": "Arjun Rao",
+      "ownerId": 1002,
+      "city": "Kolkata",
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Parking",
+        "Power backup"
+      ],
+      "description": "",
+      "images": []
+    },
+    {
+      "id": 6,
+      "name": "Campus Stay – 5",
+      "addr": "7 FC Road, Pune",
+      "type": "Double sharing",
+      "rent": 5800,
+      "status": "pending",
+      "owner": "Arjun Rao",
+      "ownerId": 1002,
+      "city": "Pune",
+      "amenities": [
+        "WiFi",
+        "Food",
+        "Gym"
+      ],
+      "description": "",
+      "images": []
+    },
+    {
+      "id": 7,
+      "name": "Campus Stay – 6",
+      "addr": "7 FC Road, Pune",
+      "type": "Single room",
+      "rent": 8200,
+      "status": "available",
+      "owner": "Meera Shah",
+      "ownerId": 1001,
+      "city": "Pune",
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Food"
+      ],
+      "description": "",
+      "images": []
+    },
+    {
+      "id": 8,
+      "name": "Lakeview – 3C",
+      "addr": "21 Lake Road, Hyderabad",
+      "type": "Triple sharing",
+      "rent": 4500,
+      "status": "available",
+      "owner": "Arjun Rao",
+      "ownerId": 1002,
+      "city": "Hyderabad",
+      "amenities": [
+        "WiFi",
+        "Power backup"
+      ],
+      "description": "",
+      "images": []
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "roomId": 2,
+      "roomName": "Sunrise PG – 102",
+      "roomAddr": "12 MG Road, Indiranagar, Bengaluru",
+      "roomType": "Double sharing",
+      "rent": 6500,
+      "ownerId": 1001,
+      "owner": "Meera Shah",
+      "tenantId": null,
+      "tenant": "Karan Mehta",
+      "tenantEmail": "karan@example.com",
+      "tenantPhone": "9811111111",
+      "status": "approved",
+      "createdAt": "2026-09-20T10:00:00.000Z",
+      "updatedAt": "2026-09-20T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "roomId": 5,
+      "roomName": "Green Nest – B1",
+      "roomAddr": "48 Park Street, Kolkata",
+      "roomType": "1 BHK",
+      "rent": 15500,
+      "ownerId": 1002,
+      "owner": "Arjun Rao",
+      "tenantId": null,
+      "tenant": "Sneha Iyer",
+      "tenantEmail": "sneha@example.com",
+      "tenantPhone": "9822222222",
+      "status": "approved",
+      "createdAt": "2026-09-25T10:00:00.000Z",
+      "updatedAt": "2026-09-25T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "roomId": 6,
+      "roomName": "Campus Stay – 5",
+      "roomAddr": "7 FC Road, Pune",
+      "roomType": "Double sharing",
+      "rent": 5800,
+      "ownerId": 1002,
+      "owner": "Arjun Rao",
+      "tenantId": null,
+      "tenant": "Riya Verma",
+      "tenantEmail": "riya@example.com",
+      "tenantPhone": "9833333333",
+      "status": "pending",
+      "createdAt": "2026-10-08T10:00:00.000Z",
+      "updatedAt": "2026-10-08T10:00:00.000Z"
+    }
+  ]
+}

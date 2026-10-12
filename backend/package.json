@@ -1,0 +1,9 @@
+{
+  "name": "nestroom-backend",
+  "version": "2.0.0",
+  "description": "REST API for the NestRoom Room & PG dashboard (Node.js + MongoDB Atlas)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "mongodb": "^6.8.0" },
+  "engines": { "node": ">=18" }
+}
