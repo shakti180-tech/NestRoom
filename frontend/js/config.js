@@ -1,2 +1,2 @@
 // Point this at wherever the backend is running.
-window.NESTROOM_API = "http://localhost:3000/api";
+window.NESTROOM_API = "https://nestroom.onrender.com/api";
